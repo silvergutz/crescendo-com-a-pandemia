@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    color: #333;
+    background: #fff;
+}
+
+article, figcaption, figure, 
+footer, header, nav, section {
+	display: block;
+}
+
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #ff3800;
+}
+
+#page-header {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ff2d20;
+}
+.logo {
+    flex: 0 1 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #3e3e3e;
+}
+.logo img {
+    flex: 1 0 60px;
+    margin-right: .5rem;
+}
+.logo small {
+    font-size: 67%;
+    display: block;
+}
+@media (max-width: 500px) {
+    .logo {
+        font-size: 13px;
+    }
+    .logo img {
+        flex: 1 0 45px;
+    }
+}
+
+nav {
+    flex: 0 1 auto;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+nav ul li a {
+    display: block;
+    padding: .5em 2em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #3e3e3e;
+}
+.menu-mobile {
+    display: none;
+}
+@media (max-width: 900px) {
+    .menu-icon, .menu-icon::before, .menu-icon::after {
+        content: " ";
+        display: block;
+        border-radius: 10px;
+        border: 2px solid #ff3800;
+    }
+    .menu-icon::before, .menu-icon::after {
+        position: absolute;
+        left: -2px;
+        width: 100%;
+    }
+    .menu-icon::before {
+        top: 8px;
+    }
+    .menu-icon::after {
+        top: 18px;
+    }
+    .menu-icon {
+        position: relative;
+    }
+    .menu-mobile {
+        display: block;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+    }
+    
+    nav {
+        position: relative;
+    }
+    nav ul {
+        position: absolute;
+        display: none;
+        left: -50px;
+        background: #f5f5f5;
+        border: 1px solid #ff2d20;
+        border-radius: 7px;
+        top: 40px;
+        z-index: 2;
+        height: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    nav ul.active {
+        display: block;
+        transition: all .5s;
+        height: auto;
+    }
+}
+@media (min-width: 640px) and (max-width: 900px) {
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.section-title {
+    margin-bottom: 2em;
+    font-size: 25px;
+    color: #3e3e3e;
+    border-left: 5px solid #ff2d20;
+    padding: .25em 0.4em;
+}
+
+.section-posts .section-body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    justify-content: space-evenly;
+}
+@media (max-width: 640px) {
+    .section-posts .section-body {
+        grid-template-columns: auto;
+    }
+}
+@media (min-width: 640px) and (max-width: 900px) {
+    .section-posts .section-body {
+        grid-template-columns: auto auto;
+    }
+}
+.section-posts .post {
+    overflow: hidden;
+    border-radius: 5px;
+}
+.section-posts .post > a {
+    display: block;
+    position: relative;
+    color: #fff;
+}
+.section-posts .post > a img {  
+    transition: all 1s;
+}
+.section-posts .post > a:hover img {
+    transform: scale(1.1);
+}
+.section-posts .post-title {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em .5em .5em;
+    background: linear-gradient(#0000, #000);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.section-sobre, .section-saiba-mais {
+    background: #333;
+    color: #fff;
+}
+.section-sobre .section-title,
+.section-saiba-mais .section-title {
+    color: #fff;
+}
+.section-sobre .section-body {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: flex-start;
+    justify-content: flex-start;
+    grid-gap: 2rem;
+}
+@media (max-width: 640px) {
+    .section-sobre .section-body {
+        grid-template-columns: auto;
+    }
+}
+.section-sobre figure {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.section-sobre figure img {
+    background-color: #ada296;
+    max-width: 100%;
+    border-radius: 50%;
+    border: 3px solid #ff3800;
+}
+.sobre-conteudo {
+    overflow: hidden;
+    position: relative;
+    max-width: 600px;
+}
+
+.sobre-conteudo::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    transform: rotateZ(45deg);
+}
+.sobre-nome {
+    margin-bottom: 1.5em;
+}
+.sobre-descricao {
+    margin-bottom: 2em;
+    font-size: 15px;
+    line-height: 1.3;
+}
+.sobre-canais {
+    background: #fff;
+    display: inline-block;
+    padding: .5rem 0rem 0.2rem .5rem;
+    border-radius: 5px;
+}
+.sobre-canais a {
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.saiba-mais-conteudo {
+    line-height: 1.3;
+}
+.saiba-mais-conteudo a {
+    font-weight: 400;
+}
+.saiba-mais-fontes {
+    margin-top: 2rem;
+}
+.fontes-title {
+    margin-bottom: 1em;
+    font-size: 18px;
+}
+.saiba-mais-fontes a {
+    color: #fff;
+}
+.saiba-mais-fontes .fonte-nome {
+    color: #ff3800;
+}
+.saiba-mais-fontes li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.fonte-conteudo {
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}

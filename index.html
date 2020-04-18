@@ -3,148 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Crescendo com a Pandemia - Surfando a onda da Covid-19</title>
     <meta name="description" content="Notícias e histórias de empresas e empreendedores que com certeza sairão mais fortes da Pandemia de Covid-19">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="manifest" href="/manifest.json">
+    
+    <title>Crescendo com a Pandemia - Surfando a onda da Covid-19</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a class="logo-link" href="/">
-                <img src="http://substituirurl.com.br/images/logo.png" alt="Crescendo com a Pandemia">
-            </a>
-        </div>
+    <header id="page-header">
+        <a class="logo" href="#">
+            <img src="images/favicon-96x96.png" alt="Crescendo com a Pandemia">
+            <h1 class="logo-text">
+                Crescendo 
+                <small>com a Pandemia</small>
+            </h1>
+        </a>
         <nav>
-            <ul>
+            <div class="menu-mobile">
+                <div class="menu-icon" onclick="activeMenu();"></div>
+            </div>
+            <ul id="menu-list">
                 <li>
-                    <a href="http://substituirurl.com.br/">Home</a>
+                    <a href="#" onclick="deactiveMenu();">Home</a>
                 </li>
                 <li>
-                    <a href="http://substituirurl.com.br/#sobre">Sobre</a>
+                    <a href="#sobre" onclick="deactiveMenu();">Sobre</a>
                 </li>
                 <li>
-                    <a href="http://substituirurl.com.br/#contato">Contato</a>
+                    <a href="#contato" onclick="deactiveMenu();">Contato</a>
                 </li>
                 <li>
-                    <a href="http://substituirurl.com.br/#saiba-mais">Saiba Mais</a>
+                    <a href="#saiba-mais" onclick="deactiveMenu();">Saiba Mais</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="page home">
-        <section class="section-posts">
-            <h2 class="section-title">Últimas Notícias</h2>
+        <section class="section-posts page-section">
+            <div class="container">
+                <h2 class="section-title">Últimas Notícias</h2>
 
-            <div class="section-body">
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
-                <article class="post" itemscope itemtype="https://schema.org/Article">
-                    <a href="http://substituirurl.com.br/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
-                        <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
-                        <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
-                    </a>
-                </article>
+                <div class="section-body">
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                    <article class="post" itemscope itemtype="https://schema.org/Article">
+                        <a href="comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores.html" itemprop="url">
+                            <img src="images/Fachada-Itajaí-Shopping-foto-agencia-Yard-300x220.jpg" alt="Fachada Itajaí Shopping">
+                            <h3 class="post-title" itemprop="headline">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</h3>
+                        </a>
+                    </article>
+                </div>
             </div>
         </section>
 
         <section id="sobre" class="section-sobre page-section" itemscope itemtype="https://schema.org/Person">
-            <h2 class="section-title">Sobre</h2>
-            <div class="section-body">
-                <figure>
-                    <img src="http://substituirurl.com.br/images/tiagovergutz.jpg" alt="Tiago Vergutz" itemprop="image">
-                </figure>
-                <div class="sobre-conteudo">
-                    <h3 class="sobre-nome" itemprop="name">Tiago Vergutz</h3>
-                    <div class="sobre-descricao" itemprop="description">
-                        Em uma eterna jornada em busca de conhecimento. Programador por profissão, no mercado de trabalho a mais a mais de 10 anos.
-                        Pai de uma menina e com mais um a caminho. Apaixonado por música e computação.
-                        Este sou eu, vivendo com otimismo sempre tentando deixar a minha marca por onde eu passo.  
+            <div class="container">
+                <h2 class="section-title">Sobre</h2>
+                <div class="section-body">
+                    <figure>
+                        <img src="images/tiago-vergutz-profile.png" alt="Tiago Vergutz" itemprop="image">
+                    </figure>
+                    <div class="sobre-conteudo">
+                        <h3 class="sobre-nome" itemprop="name">Tiago Vergutz</h3>
+                        <div class="sobre-descricao" itemprop="description">
+                            Profissão programador. Trabalho com o que amo fazer.<br>
+                            No mercado de trabalho a 10 anos, atuo como Desenvolvedor Web Fullstack.<br>
+                            Pai de uma menina e com um menino a caminho. Apaixonado por música e tecnologia.<br>
+                            Em uma eterna jornada em busca de conhecimento.<br>
+                            Vivo com otimismo e sempre tento deixar a minha marca por onde eu passo.  
+                        </div>
+                        <div class="sobre-canais">
+                            <a class="linkedin" href="https://linkedin.com/in/tiagovergutz" title="LinkedIn">
+                                <img src="images/linkedin.png" alt="">
+                            </a>
+                            <a class="github" href="https://github.com/silververgutz" title="Github">
+                                <img src="images/github.png" alt="">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="sobre-canais">
-                    <a href="https://linkedin.com/in/tiagovergutz" title="LinkedIn">
-                        <img src="http://substituirurl.com.br/images/linkedin.png" alt="">
-                    </a>
-                    <a href="https://github.com/silververgutz" title="Github">
-                        <img src="http://substituirurl.com.br/images/github.png" alt="">
-                    </a>
-                    <a href="https://facebook.com/tiagovergutz" title="Facebook">
-                        <img src="http://substituirurl.com.br/images/facebook.png" alt="">
-                    </a>
                 </div>
             </div>
         </section>
 
         <section id="contato" class="section-contato page-section">
-            <h2 class="section-title">Contato</h2>
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
 
-            <div class="section-body"></div>
-                <div class="typeform-widget" data-url="https://silveryep.typeform.com/to/FH9UcF" style="width: 100%; height: 300px;"></div> 
-                <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                <div class="section-body"></div>
+                    <div class="typeform-widget" data-url="https://silveryep.typeform.com/to/FH9UcF" style="width: 100%; height: 370px;"></div> 
+                    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                </div>
             </div>
         </section>
 
         <section id="saiba-mais" class="section-saiba-mais page-section">
-            <h2 class="section-title">Saiba Mais</h2>
-            
-            <div class="section-body">
-                <div class="saiba-mais-conteudo">
-                    <p>Esta página é parte de um trabalho realizado no programa Hiring Coders da <a href="https://gama.academy">Gama Academy</a> em parceria com a <a href="https://vtex.com">Vtex</a>.</p>
-                    <p>Ele foi criado em meio a pandemia da Covid-19 que ocorreu no ano de 2020.</p>
-                    <p>Em meio a tamanha crise mundial, trago aqui alguns notícias animadoras de empreendedores que souberam utilizar o momento de crise para crescer.</p>
-                    <p>Não necessariamente aumentaram a sua receita, longe disso, mas cresceram como empreendedores, profissionais e pessoas. Reinventando a forma de operar no seu negócio ou até mesmo pivotando e se abrindo para outras oportunidades.</p>
-                    <p>Em questão de poucos dias, tiraram do papel projetos que em uma situação normal, levaria meses ou até anos.</p>
+            <div class="container">
+                <h2 class="section-title">Saiba Mais</h2>
+                
+                <div class="section-body">
+                    <div class="saiba-mais-conteudo">
+                        <p>Esta página é parte de um trabalho realizado no programa Hiring Coders da <a href="https://gama.academy">Gama Academy</a> em parceria com a <a href="https://vtex.com">Vtex</a>.</p>
+                        <p>Ela foi criada em meio a pandemia da <strong>Covid-19</strong> que ocorreu no ano de 2020.</p>
+                        <p>Em meio a tamanha crise mundial, trago aqui alguns notícias animadoras de empreendedores que souberam utilizar o momento de crise para crescer.</p>
+                        <p>Não necessariamente aumentaram a sua receita, mas cresceram como empreendedores, profissionais e pessoas.</p>
+                        <p>Muitos reinventaram a forma de operar no seu negócio ou até mesmo pivotando e se abrindo para outras oportunidades.</p>
+                        <p>Em questão de poucos dias, tiraram do papel projetos que em uma situação normal, levaria meses ou até anos.</p>
 
-                    <div class="saiba-mais-fontes">
-                        <h3>Seguem as fontes utilizadas:</h3>
-                        <ul>
-                            <li>
-                                <a href="https://www.cidademarketing.com.br/marketing/2020/04/15/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores/" title="Cidade Marketing">
-                                    <div class="fonte-nome">Cidade Marketing</div>
-                                    <div class="fonte-conteudo">
-                                        <div class="fonte-conteudo-label">Artigo: </div>
-                                        <div calss="fonte-conteudo-nome">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</div>
-                                    </div>   
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://exame.abril.com.br/negocios/com-lojas-fechadas-ri-happy-usa-whatsapp-e-lives-para-continuar-vendendo/" title="EXAME">
-                                    <div class="fonte-nome">EXAME</div>
-                                    <div class="fonte-conteudo">
-                                        <div class="fonte-conteudo-label">Artigo: </div>
-                                        <div calss="fonte-conteudo-nome">Com lojas fechadas, Ri Happy usa WhatsApp para seguir vendendo brinquedos</div>
-                                    </div>   
-                                </a>
-                            </li>
+                        <div class="saiba-mais-fontes">
+                            <h3 class="fontes-title">Seguem as fontes utilizadas:</h3>
+                            <ul>
+                                <li>
+                                    <a href="https://www.cidademarketing.com.br/marketing/2020/04/15/comerciantes-se-reinventam-durante-periodo-de-quarentena-para-continuar-atendendo-os-consumidores/" title="Cidade Marketing">
+                                        <div class="fonte-nome">Cidade Marketing</div>
+                                        <div class="fonte-conteudo">
+                                            <span calss="fonte-conteudo-nome">Comerciantes se reinventam durante período de quarentena para continuar atendendo os consumidores</span>
+                                        </div>   
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://exame.abril.com.br/negocios/com-lojas-fechadas-ri-happy-usa-whatsapp-e-lives-para-continuar-vendendo/" title="EXAME">
+                                        <div class="fonte-nome">EXAME</div>
+                                        <div class="fonte-conteudo">
+                                            <span calss="fonte-conteudo-nome">Com lojas fechadas, Ri Happy usa WhatsApp para seguir vendendo brinquedos</span>
+                                        </div>   
+                                    </a>
+                                </li>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,8 +173,18 @@
         </section>
     </main>
 
-    <footer>
-        Tiago Vergutz - 
-    </footer>
+    <script>
+        function activeMenu() {
+            const el = document.getElementById('menu-list')
+            if (el.classList.contains('active')) {
+                el.classList.remove('active')
+            } else {
+                el.classList.add('active');
+            }
+        }
+        function deactiveMenu() {
+            document.getElementById('menu-list').classList.remove('active');
+        }
+    </script>
 </body>
 </html>
