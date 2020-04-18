@@ -39,9 +39,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
     text-transform: uppercase;
     color: #3e3e3e;
+}
+.logo-text {
+    font-size: 36px;
+    font-weight: 600;
 }
 .logo img {
     flex: 1 0 60px;
@@ -52,8 +55,8 @@ a {
     display: block;
 }
 @media (max-width: 500px) {
-    .logo {
-        font-size: 13px;
+    .logo-text {
+        font-size: 26px;
     }
     .logo img {
         flex: 1 0 45px;
@@ -286,4 +289,47 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 1em;
+}
+
+
+.post-page .post-header {
+    margin-bottom: 2rem;
+}
+.post-header .post-title {
+    font-size: 30px;
+    margin-bottom: 1em;
+}
+@media (max-width: 500px) {
+    .post-header .post-title {
+        font-size: 24px;
+    }
+}
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+}
+.post-body .post-thumb {
+    margin: 0 auto;
+    text-align: center;
+}
+.post-body .post-thumb figure {
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.post-body .post-thumb figcaption {
+    text-align: right;
+    font-size: 12px;
+}
+.post-content {
+    line-height: 1.3;
+}
+.post-content p {
+    margin-bottom: 1.5em;
+}
+.post-autor {
+    text-align: right;
+}
+
+#page-footer {
+    background: #ada296;
 }
