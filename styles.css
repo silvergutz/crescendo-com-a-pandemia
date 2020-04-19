@@ -335,6 +335,14 @@ footer {
     text-align: right;
 }
 
+iframe.post-video {
+    display: block;
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+    margin: 0 auto;
+}
+
 #page-footer {
     background: #ada296;
 }
